@@ -48,7 +48,7 @@ const EmployeeList = () => {
   };
 
   const confirmDelete = () => {
-    setEmployees(employees.filter(employee => employee.id !== employeeToDelete.id));
+    setEmployees(employees.filter(employee => employee._id !== employeeToDelete._id));
     closeDeleteModal();
   };
 
